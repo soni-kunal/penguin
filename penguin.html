@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        
+        <title>
+            Penguin Game
+        </title>
+        <style>
+            #b{
+                text-align: center;
+            }
+            .grid-container{
+				display:grid;
+				grid-gap: 5px 5px;
+				grid-template-columns: auto auto auto;
+				padding:2px;
+                text-align: center;
+			}
+            
+            #h{
+                font-family: ALGERIAN;
+                font-size: 2em;
+                text-align: center;
+                color: white;
+            }
+            
+            #btn{
+                width: 20%;
+                border-radius: 30px;
+                font-size: 2em;
+                
+            }
+        </style>
+    </head>
+    <body style="background-image: url('bc.jpeg')" id="b">
+        <h1 id="h">Penguin Game</h1>
+        <div class="grid-container">
+        
+            <div class="grid-item"><img src="mound.png" width="150" height="150" id="p1" onclick="display(this);"    onmouseover="mover_o()" onmouseout="mout_o()"></div>
+            <div class="grid-item"><img src="mound.png" width="150" height="150" onclick="display(this);" id="p2" onmouseover="mover_tw()" onmouseout="mout_tw()"></div>
+            <div class="grid-item"><img src="mound.png" width="150" height="150" onclick="display(this);" id="p3" onmouseover="mover_tr()" onmouseout="mout_tr()"></div>
+            <div class="grid-item"><img src="mound.png" width="150" height="150" onclick="display(this);" id="p4" onmouseover="mover_fr()" onmouseout="mout_fr()"></div>
+            <div class="grid-item"><img src="mound.png" width="150" height="150" onclick="display(this);" id="p5" onmouseover="mover_fv()" onmouseout="mout_fv()"></div>
+            <div class="grid-item"><img src="mound.png" width="150" height="150" onclick="display(this);" id="p6" onmouseover="mover_sx()" onmouseout="mout_sx()"></div>
+            <div class="grid-item"><img src="mound.png" width="150" height="150" onclick="display(this);" id="p7" onmouseover="mover_svn()" onmouseout="mout_svn()"></div>
+            <div class="grid-item"><img src="mound.png" width="150" height="150" onclick="display(this);" id="p8" onmouseover="mover_et()" onmouseout="mout_et()"></div>
+            <div class="grid-item"><img src="mound.png" width="150" height="150" onclick="display(this);" id="p9" onmouseover="mover_nn()" onmouseout="mout_nn()"></div> 
+            
+        </div>
+        <br><br>
+        <a href="penguin.html">
+            <button class="btn btn-outline-primary " id="btn" >Play Again</button>
+        </a>
+<!--value = Math.floor(Math.random()*sum);        -->
+        <script>
+            
+            
+            function mover_o()//To change picture when mouse over
+            {
+                var p1=document.getElementById('p1');
+                var src1="mound_hover.png";
+                p1.setAttribute("src",src1);
+            }
+            function mout_o()//To change picture when mouse out
+            {
+                var p1=document.getElementById('p1');
+                var src1="mound.png";
+                p1.setAttribute("src",src1);
+            }
+            
+            
+                             function mover_tw()//To change picture when mouse over
+                            {
+                                var p1=document.getElementById('p2');
+                                var src1="mound_hover.png";
+                                p1.setAttribute("src",src1);
+                            }
+                            function mout_tw()//To change picture when mouse out
+                            {
+                                var p1=document.getElementById('p2');
+                                var src1="mound.png";
+                                p1.setAttribute("src",src1);
+                            }
+            
+            
+            function mover_tr()//To change picture when mouse over
+                {
+                    var p1=document.getElementById('p3');
+                    var src1="mound_hover.png";
+                    p1.setAttribute("src",src1);
+
+                }
+            function mout_tr()//To change picture when mouse out
+                {
+                    var p1=document.getElementById('p3');
+                    var src1="mound.png";
+                    p1.setAttribute("src",src1);
+
+                }
+            
+                            function mover_fr()//To change picture when mouse over
+                            {
+                                var p1=document.getElementById('p4');
+                                var src1="mound_hover.png";
+                                p1.setAttribute("src",src1);
+
+                            }
+                            function mout_fr()//To change picture when mouse out
+                                {
+                                    var p1=document.getElementById('p4');
+                                    var src1="mound.png";
+                                    p1.setAttribute("src",src1);
+
+                                }
+            
+            function mover_fv()//To change picture when mouse over
+                {
+                    var p1=document.getElementById('p5');
+                    var src1="mound_hover.png";
+                    p1.setAttribute("src",src1);
+
+                }
+            function mout_fv()//To change picture when mouse out
+                {
+                    var p1=document.getElementById('p5');
+                    var src1="mound.png";
+                    p1.setAttribute("src",src1);
+
+                }
+            
+            
+                            function mover_sx()//To change picture when mouse over
+                                {
+                                    var p1=document.getElementById('p6');
+                                    var src1="mound_hover.png";
+                                    p1.setAttribute("src",src1);
+
+                                }
+                            function mout_sx()//To change picture when mouse out
+                                {
+                                    var p1=document.getElementById('p6');
+                                    var src1="mound.png";
+                                    p1.setAttribute("src",src1);
+
+                                }
+            
+            function mover_svn()//To change picture when mouse over
+                {
+                    var p1=document.getElementById('p7');
+                    var src1="mound_hover.png";
+                    p1.setAttribute("src",src1);
+
+                }
+            function mout_svn()//To change picture when mouse out
+                {
+                    var p1=document.getElementById('p7');
+                    var src1="mound.png";
+                    p1.setAttribute("src",src1);
+
+                }
+            
+            
+                            function mover_et()//To change picture when mouse over
+                                {
+                                    var p1=document.getElementById('p8');
+                                    var src1="mound_hover.png";
+                                    p1.setAttribute("src",src1);
+
+                                }
+                            function mout_et()//To change picture when mouse out
+                                {
+                                    var p1=document.getElementById('p8');
+                                    var src1="mound.png";
+                                    p1.setAttribute("src",src1);
+
+                                }
+            
+            function mover_nn()//To change picture when mouse over
+                {
+                    var p1=document.getElementById('p9');
+                    var src1="mound_hover.png";
+                    p1.setAttribute("src",src1);
+
+                }
+            function mout_nn()//To change picture when mouse out
+                {
+                    var p1=document.getElementById('p9');
+                    var src1="mound.png";
+                    p1.setAttribute("src",src1);
+
+                }
+            
+            
+            
+            
+            
+            var value=0 , sum=9, count=0 , win=0;
+            function display(peng){
+                
+            arr=["penguin0.png","penguin1.png","penguin2.png","penguin3.png","penguin4.png","penguin5.png","penguin6.png","penguin7.png","penguin5.png","penguin7.png","penguin6.png"];
+                
+                value = Math.floor(Math.random()*sum);
+                if(value == 5 || value == 7){
+//                    var p1=document.getElementById('p1');
+                    var src1="yeti.png";
+                    
+					peng.setAttribute("src",src1);
+					peng.removeAttribute("onmouseover");
+                    peng.removeAttribute("onclick");
+                    peng.removeAttribute("onmouseout");
+                    window.open("new.html");
+                }else{
+                    count++; win++;
+                    peng.src= arr[value];
+                }
+                if(count == 1) {
+                    peng.removeAttribute("onmouseover");
+                    peng.removeAttribute("onclick");
+                    peng.removeAttribute("onmouseout");
+                    count=0;
+                }
+                
+                if(win == 9){
+                    window.alert("You Won The Game");
+                }
+            }
+            
+            
+            
+        </script>
+    </body>
+</html>
